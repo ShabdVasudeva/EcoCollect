@@ -2,6 +2,7 @@
 # 🌍 E-Waste Management Web App  
 *A modern Next.js + TypeScript web application for responsible electronic waste handling.*
 
+https://ewastecollect.netlify.app/
 ---
 
 ## 📌 Overview  
