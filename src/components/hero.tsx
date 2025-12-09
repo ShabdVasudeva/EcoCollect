@@ -21,7 +21,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 p-4 flex flex-col items-center max-w-4xl mx-auto">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight drop-shadow-lg">
-          Give Your E-Waste a New Life
+          Let's sort our e-waste..
         </h1>
         <p className="mt-4 max-w-2xl text-lg md:text-xl text-primary-foreground/90 drop-shadow-md">
           Join us in building a sustainable future. Responsibly recycle your old electronics with EcoCollect.

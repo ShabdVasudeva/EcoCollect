@@ -35,6 +35,7 @@ import {
   assessProduct,
 } from '@/ai/flows/assess-product-flow';
 import type { AssessProductOutput } from '@/ai/flows/assess-product-flow';
+import { BackgroundPattern } from './background-pattern';
 
 
 const AssessProductInputSchema = z.object({
@@ -82,8 +83,9 @@ export function ProductAssessor() {
   }
 
   return (
-    <section id="assessor" className="py-16 sm:py-24 bg-muted/50">
-      <div className="container mx-auto max-w-3xl px-4">
+    <section id="assessor" className="py-16 sm:py-24 bg-background relative overflow-hidden">
+      <BackgroundPattern className="absolute inset-0 z-0" />
+      <div className="container mx-auto max-w-3xl px-4 relative z-10">
         <Card className="shadow-lg">
           <CardHeader className="text-center">
             <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 mb-4">
