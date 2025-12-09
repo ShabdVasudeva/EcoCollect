@@ -10,6 +10,7 @@ export function Header() {
 
   const navItems = [
     { name: 'Guide', href: '#guide' },
+    { name: 'Awareness', href: '#awareness' },
     { name: 'Assessor', href: '#assessor' },
     { name: 'Locations', href: '#locator' },
     { name: 'Schedule Pickup', href: '#schedule' },
