@@ -1,6 +1,7 @@
 import { Header } from '@/components/header';
 import { Hero } from '@/components/hero';
 import { EwasteGuide } from '@/components/ewaste-guide';
+import { AwarenessSection } from '@/components/awareness-section';
 import { ProductAssessor } from '@/components/product-assessor';
 import { RecyclingLocator } from '@/components/recycling-locator';
 import { PickupForm } from '@/components/pickup-form';
@@ -18,10 +19,6 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <EwasteGuide />
-        <ProductAssessor />
-        <RecyclingLocator />
-        <PickupForm />
         <MotionDiv
           variants={variants}
           initial="hidden"
@@ -30,6 +27,15 @@ export default function Home() {
           transition={{ duration: 0.5 }}
         >
           <EwasteGuide />
+        </MotionDiv>
+        <MotionDiv
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <AwarenessSection />
         </MotionDiv>
         <MotionDiv
           variants={variants}
