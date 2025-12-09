@@ -42,7 +42,7 @@ const AssessProductInputSchema = z.object({
   purchaseYear: z.coerce.number().int().min(1980, "Please enter a valid year."),
   conditionDescription: z
     .string({ required_error: 'Condition is required.'})
-    .min(10, 'Please provide a more detailed description (at least 10 characters).'),
+    .min(1, 'Please provide a more detailed description (at least 1 characters).'),
 });
 
 type FormValues = z.infer<typeof AssessProductInputSchema>;

@@ -6,6 +6,7 @@ import { MapPin, Clock, Loader2, Navigation, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { findNearbyCenters, type Center } from '@/ai/flows/find-centers-flow';
 import { Skeleton } from '@/components/ui/skeleton';
+import { BackgroundPattern } from './background-pattern';
 
 // Haversine formula to calculate distance between two lat/lng points
 const getDistance = (lat1: number, lon1: number, lat2: number, lon2: number) => {
@@ -86,8 +87,9 @@ export function RecyclingLocator() {
   }, [userLocation]);
 
   return (
-    <section id="locator" className="py-16 sm:py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="locator" className="py-16 sm:py-24 bg-background relative overflow-hidden">
+      <BackgroundPattern className="absolute inset-0 z-0 opacity-[0.03]" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold">Find a Recycling Center</h2>
           <p className="mt-4 text-lg text-muted-foreground">
@@ -131,7 +133,7 @@ export function RecyclingLocator() {
             {centers.map((center) => (
               <Card 
                 key={center.id}
-                className="w-full h-full flex flex-col transition-all duration-300 hover:shadow-lg hover:border-primary"
+                className="w-full h-full flex flex-col transition-all duration-300 hover:shadow-lg hover:border-primary bg-card"
               >
                 <CardHeader>
                   <CardTitle className="text-xl">{center.name}</CardTitle>

@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Laptop, Smartphone, BatteryCharging, Tv2, Printer, Cable } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import { BackgroundPattern } from './background-pattern';
 
 interface EwasteCategory {
   title: string;
@@ -43,8 +44,9 @@ const categories: EwasteCategory[] = [
 
 export function EwasteGuide() {
   return (
-    <section id="guide" className="py-16 sm:py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="guide" className="py-16 sm:py-24 bg-background relative overflow-hidden">
+       <BackgroundPattern className="absolute inset-0 z-0 opacity-[0.03]" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold">What Can You Recycle?</h2>
           <p className="mt-4 text-lg text-muted-foreground">

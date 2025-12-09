@@ -11,6 +11,12 @@
       "description": "A stylized city map to represent the recycling center locator.",
       "imageUrl": "https://images.unsplash.com/photo-1522678073884-26b1b87526e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2l0eSUyMG1hcHxlbnwwfHx8fDE3NjQwNDkzMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "city map"
+    },
+    {
+      "id": "awareness-background",
+      "description": "A collage of various electronic waste items, highlighting the scale of the problem.",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/6063fb56ece40577795aaa5f/20fe33a3-8425-41fd-b8cf-2811651ca473/iStock-1372577388.jpg",
+      "imageHint": "e-waste collage"
     }
   ]
 }
